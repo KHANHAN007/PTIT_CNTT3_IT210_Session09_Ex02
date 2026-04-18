@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+</head>
+<body>
+
+<h2 th:text="${msg}"></h2>
+
+<form th:action="@{/set-name}" method="post">
+    <input type="text" name="name" th:value="${guestName}" placeholder="Nhập tên">
+    <button type="submit">Lưu tên</button>
+</form>
+
+<br>
+
+<a th:href="@{/delete-cookie}">Xoá</a>
+</body>
+</html>
