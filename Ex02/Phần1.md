@@ -1,1 +1,0 @@
-Vấn đề: Khi chưa có cookie guest_name thì spring sẽ không guest_name = null -> không chạy vào if -> ném lỗi 400 Bad Request
